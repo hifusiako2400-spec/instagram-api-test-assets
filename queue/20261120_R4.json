@@ -1,0 +1,14 @@
+{
+  "id": "R4",
+  "account": "webcompany_ai_iwamoto",
+  "publish_at": "2026-11-20T12:00:00+09:00",
+  "type": "REEL",
+  "media": [
+    "2026-11/R4/reel_bgm.mp4"
+  ],
+  "cover": "2026-11/R4/cover.png",
+  "share_to_feed": true,
+  "caption": "お店の電話番号、タップでかけられますか？\n\nスマホで見る人のために、\n・画面の下に「電話する」ボタンを固定\n・地図はタップで地図アプリが開くように\nしておくと、問い合わせや来店につながりやすくなります。\n\nまわりのお店にも、送って教えてあげてください。\n\n※画面は架空のお店の例です。\n\n#ホームページ制作 #WordPress #スマホ対応 #個人事業主 #小さなお店",
+  "status": "hold",
+  "note": "Metricool で予約済み（予約ID は calendar.csv）。切り替えるときに Metricool 側を削除してから queued にする"
+}

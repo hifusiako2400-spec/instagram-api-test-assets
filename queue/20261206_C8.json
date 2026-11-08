@@ -1,0 +1,20 @@
+{
+  "id": "C8",
+  "account": "webcompany_ai_iwamoto",
+  "publish_at": "2026-12-06T20:00:00+09:00",
+  "type": "CAROUSEL",
+  "media": [
+    "2026-12/C8/01.png",
+    "2026-12/C8/02.png",
+    "2026-12/C8/03.png",
+    "2026-12/C8/04.png",
+    "2026-12/C8/05.png",
+    "2026-12/C8/06.png",
+    "2026-12/C8/07.png"
+  ],
+  "cover": null,
+  "share_to_feed": true,
+  "caption": "はじめてのHP、何から始まる？\n\n相談から公開までの流れです。\n\n① DMで相談（何も決まっていなくて大丈夫）\n② ヒアリング（お店のことを伺います）\n③ 見積もり（内訳つき・日程表もお渡し）\n④ 制作と確認（途中でも見ていただきます）\n⑤ 公開と更新の説明\n\n「ちょっと聞いてみたい」だけでも大歓迎です。\nまずはDMで気軽にどうぞ。\n\n#ホームページ制作 #WordPress #スマホ対応 #個人事業主 #小さなお店",
+  "status": "hold",
+  "note": "Metricool で予約済み（予約ID は calendar.csv）。切り替えるときに Metricool 側を削除してから queued にする"
+}

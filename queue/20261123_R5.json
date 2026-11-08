@@ -1,0 +1,14 @@
+{
+  "id": "R5",
+  "account": "webcompany_ai_iwamoto",
+  "publish_at": "2026-11-23T12:00:00+09:00",
+  "type": "REEL",
+  "media": [
+    "2026-11/R5/reel_bgm.mp4"
+  ],
+  "cover": "2026-11/R5/cover.png",
+  "share_to_feed": true,
+  "caption": "リハビリの現場で学んだ、伝わる説明のコツです。\n\n① 専門用語は、身近な言葉に置き換える\n「ドメイン」より「ネット上の住所」の方が伝わります。\n\n② 一度に伝えるのは3つまで\n少ないほうが覚えてもらえます。\n\nホームページの相談も、この調子で進めます。\n「専門用語が苦手」という方こそ、気軽に声をかけてください。\n\n#ホームページ制作 #WordPress #スマホ対応 #個人事業主 #小さなお店",
+  "status": "hold",
+  "note": "Metricool で予約済み（予約ID は calendar.csv）。切り替えるときに Metricool 側を削除してから queued にする"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "R2",
+  "account": "webcompany_ai_iwamoto",
+  "publish_at": "2026-11-13T12:00:00+09:00",
+  "type": "REEL",
+  "media": [
+    "2026-11/R2/reel_bgm.mp4"
+  ],
+  "cover": "2026-11/R2/cover.png",
+  "share_to_feed": true,
+  "caption": "今すぐ、スマホで自分のHPを開いてみてください。\n\n① 指で広げないと読めない\n② 電話番号をタップしてもかからない\n③ 最後のお知らせが1年以上前\n\nひとつでも当てはまったら、直しどきです。\n同じように気になっていそうなお店仲間にも、シェアしてあげてください。\n\n※画面は架空のお店の例です。\n\n#ホームページ制作 #WordPress #スマホ対応 #個人事業主 #小さなお店",
+  "status": "hold",
+  "note": "Metricool で予約済み（予約ID は calendar.csv）。切り替えるときに Metricool 側を削除してから queued にする"
+}

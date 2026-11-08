@@ -1,0 +1,14 @@
+{
+  "id": "R3",
+  "account": "webcompany_ai_iwamoto",
+  "publish_at": "2026-11-16T12:00:00+09:00",
+  "type": "REEL",
+  "media": [
+    "2026-11/R3/reel_bgm.mp4"
+  ],
+  "cover": "2026-11/R3/cover.png",
+  "share_to_feed": true,
+  "caption": "このHP、どこを変えたと思いますか？\n\n変えたのは、\n・文字の大きさ\n・行の間隔\n・ボタンの大きさ\nの3つだけです。\n\n全部作り直さなくても、ここまで読みやすくなります。\nあなたならどこから直しますか？コメントで教えてください。\n\n※架空のお店の例です。\n\n#ホームページ制作 #WordPress #スマホ対応 #個人事業主 #小さなお店",
+  "status": "hold",
+  "note": "Metricool で予約済み（予約ID は calendar.csv）。切り替えるときに Metricool 側を削除してから queued にする"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "R1",
+  "account": "webcompany_ai_iwamoto",
+  "publish_at": "2026-11-09T12:00:00+09:00",
+  "type": "REEL",
+  "media": [
+    "2026-11/R1/reel_bgm.mp4"
+  ],
+  "cover": "2026-11/R1/cover.png",
+  "share_to_feed": true,
+  "caption": "元リハビリの先生が、ホームページを作っています。\n\n理学療法士として13年、患者さんに体のことを分かりやすく説明するのが仕事でした。\n\nホームページも同じで、伝わらなければ意味がありません。\n\n小さなお店のホームページを、専門用語なしで一緒に整えます。\nスマホで見やすいHPのコツを発信していくので、フォローしてもらえるとうれしいです。\n\n#ホームページ制作 #WordPress #スマホ対応 #個人事業主 #小さなお店",
+  "status": "hold",
+  "note": "Metricool で予約済み（予約ID は calendar.csv）。切り替えるときに Metricool 側を削除してから queued にする"
+}

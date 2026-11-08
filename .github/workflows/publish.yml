@@ -1,0 +1,51 @@
+# Instagram 予約投稿：15分ごとに queue/ を見て、時刻が来た投稿を公開する
+name: Instagram 予約投稿
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'API を呼ばずに試運転する（1 = 試運転）'
+        default: '0'
+concurrency:
+  group: instagram-publish
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      EXPECTED_USERNAME: ${{ vars.EXPECTED_USERNAME }}
+      MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL }}
+      RUN_ID: ${{ github.run_id }}
+      DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: git の設定
+        run: |
+          git config user.name "instagram-publisher[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: 時刻が来た投稿を確保する
+        id: claim
+        run: |
+          node publisher/publish.mjs claim
+          if ! git diff --quiet -- queue; then
+            git add queue && git commit -q -m "予約投稿: 公開処理を開始 (run ${RUN_ID})"
+            git push   # 失敗したら（ほかの更新と衝突したら）ここで止まり、公開しない
+          fi
+      - name: 公開する
+        run: node publisher/publish.mjs publish
+      - name: 結果を記録する
+        if: always() && steps.claim.outcome == 'success'
+        run: |
+          if ! git diff --quiet -- queue; then
+            git add queue && git commit -q -m "予約投稿: 結果を記録 (run ${RUN_ID})"
+            git pull -q --rebase && git push
+          fi

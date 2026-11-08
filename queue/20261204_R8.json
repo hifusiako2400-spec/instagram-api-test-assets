@@ -1,0 +1,14 @@
+{
+  "id": "R8",
+  "account": "webcompany_ai_iwamoto",
+  "publish_at": "2026-12-04T12:00:00+09:00",
+  "type": "REEL",
+  "media": [
+    "2026-12/R8/reel_bgm.mp4"
+  ],
+  "cover": "2026-12/R8/cover.png",
+  "share_to_feed": true,
+  "caption": "あなたのHP、無料でチェックします。\n\nスマホでの見やすさを、直した方がいい点を中心に3つお伝えします。\n無理な営業はしません。\n\n申し込みは、DMで「チェック」と送るだけ。\n※先着5件・12/20（日）までの受付です。\n※チェック結果はDMでお返しします。\n\n#ホームページ制作 #WordPress #スマホ対応 #個人事業主 #小さなお店",
+  "status": "hold",
+  "note": "Metricool で予約済み（予約ID は calendar.csv）。切り替えるときに Metricool 側を削除してから queued にする"
+}

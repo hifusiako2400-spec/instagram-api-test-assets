@@ -1,0 +1,25 @@
+# アクセストークンを毎週更新する（有効期限60日。発行から24時間以上たつと更新できる）
+name: Instagram トークン更新
+on:
+  schedule:
+    - cron: '17 18 * * 0'   # 毎週月曜 3:17（日本時間）
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: 更新して Secrets に保存
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then echo "::error::SECRETS_PAT がありません（トークンを自動保存できません）"; exit 1; fi
+          NEW=$(node publisher/refresh-token.mjs)
+          echo "::add-mask::$NEW"
+          printf '%s' "$NEW" | gh secret set IG_ACCESS_TOKEN --repo "$GITHUB_REPOSITORY"

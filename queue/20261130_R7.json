@@ -1,0 +1,14 @@
+{
+  "id": "R7",
+  "account": "webcompany_ai_iwamoto",
+  "publish_at": "2026-11-30T12:00:00+09:00",
+  "type": "REEL",
+  "media": [
+    "2026-11/R7/reel_bgm.mp4"
+  ],
+  "cover": "2026-11/R7/cover.png",
+  "share_to_feed": true,
+  "caption": "年末年始の営業日、HPに載っていますか？\n\n年末までにやっておきたいHP点検は3つ。\n① 年末年始の営業日のお知らせ\n② 営業時間・価格が最新か\n③ 問い合わせフォームが届くか（自分で送って確かめる）\n\nお知らせ文の例は、12/2の投稿で紹介します。\nまわりのお店にも送ってあげてください。\n\n#ホームページ制作 #WordPress #スマホ対応 #個人事業主 #小さなお店",
+  "status": "hold",
+  "note": "Metricool で予約済み（予約ID は calendar.csv）。切り替えるときに Metricool 側を削除してから queued にする"
+}
